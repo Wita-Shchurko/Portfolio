@@ -1,0 +1,33 @@
+@mixin circle {
+    &:before {
+        content: '';
+        background-image: url('../../img/circle.png');
+        background-size: 36px 36px;
+        position: absolute;
+        display: inline-block;
+        height: 36px;
+        width: 36px;
+        z-index: -1;
+    }
+}
+
+@mixin circle-left {
+    &::before {
+        top: 0;
+        left: 0;
+    }
+}
+
+@mixin circle-center {
+    &::before {
+        top: 0;
+        left: 50%;
+    }
+}
+
+@mixin divider {
+    height: 2px;
+    width: 70px;
+    background-color: #c5b05d;
+    box-shadow: 0 0 4px #c5b05d;
+}

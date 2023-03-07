@@ -41,7 +41,7 @@
         transform: translate3d(0, calc(var(--scrollTop)/5.7), 0);
     }
     &__title {
-        font-weight: 900;
+        font-weight: 700;
         font-size: calc($index * 1.8);
         letter-spacing: calc($index / 20);
     }

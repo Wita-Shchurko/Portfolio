@@ -2,35 +2,38 @@
 @import 'libs/icons';
 
 @import 'base/variables';
+@import 'base/mixins';
 
-@import 'blocks/media';
+@import 'blocks/titles';
+
 @import 'blocks/menu';
 @import 'blocks/header';
 @import 'blocks/aboutMe';
 
 
-:root {
-    --index: calc(1vh + 1vw);
-}
 
 @font-face {
-    font-family: raleway_f;
-    src: url(../fonts/raleway-regular.woff2);
+    font-family: Poppins;
+    src: url(../fonts/Poppins-Medium.ttf);
     font-weight: 500;
 }
 
 @font-face {
-    font-family: raleway_f;
-    src: url(../fonts/raleway-black.woff2);
-    font-weight: 900;
+    font-family: Poppins;
+    src: url(../fonts/Poppins-Bold.ttf);
+    font-weight: 700;
 }
 
 body {
     background-color: #040504;
-    font-family: raleway_f, sans-serif;
+    font-family: Poppins, sans-serif;
     line-height: 1.55;
     color: $text-color;
 }
 
+.container {
+    width: 1140px;
+    margin: 0 auto;
+}
 
-
+@import 'blocks/media';
