@@ -9,6 +9,7 @@
 @import 'blocks/menu';
 @import 'blocks/header';
 @import 'blocks/aboutMe';
+@import 'blocks/skills';
 
 
 
@@ -25,7 +26,9 @@
 }
 
 body {
-    background-color: #040504;
+    background: #58311c;
+    background: -webkit-linear-gradient(44deg, #58311c 0%, #393823 30%, #080908 60%, #080908 100%);
+    background: linear-gradient(44deg, #58311c 0%, #393823 30%, #080908 60%, #080908 100%);
     font-family: Poppins, sans-serif;
     line-height: 1.55;
     color: $text-color;
