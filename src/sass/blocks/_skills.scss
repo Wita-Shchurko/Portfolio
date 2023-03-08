@@ -1,4 +1,5 @@
 .skills {
+    padding-top: 120px;
     &__title {
         text-align: center;
         @include circle-center;
@@ -15,7 +16,7 @@
         margin-top: 10px;
     }
     &__wrapper {
-        margin: 60px 0 120px 0;
+        margin-top: 60px;
     }
 
 }

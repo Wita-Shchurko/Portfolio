@@ -10,7 +10,8 @@
 @import 'blocks/header';
 @import 'blocks/aboutMe';
 @import 'blocks/skills';
-
+@import 'blocks/works';
+@import 'blocks/contacts';
 
 
 @font-face {
@@ -26,9 +27,8 @@
 }
 
 body {
-    background: #58311c;
-    background: -webkit-linear-gradient(44deg, #58311c 0%, #393823 30%, #080908 60%, #080908 100%);
-    background: linear-gradient(44deg, #58311c 0%, #393823 30%, #080908 60%, #080908 100%);
+    background: -webkit-linear-gradient(20deg, #030303 0%, #030303 35%, #3a2a1d 50%, #030303 65%, #030202 100%);
+    background: linear-gradient(20deg, #030303 0%, #030303 35%, #3a2a1d 50%, #030303 65%, #030202 100%);
     font-family: Poppins, sans-serif;
     line-height: 1.55;
     color: $text-color;
