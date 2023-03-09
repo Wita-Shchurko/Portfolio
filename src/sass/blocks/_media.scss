@@ -104,6 +104,12 @@
             grid-row: 3 / 4;
         }  
     }
+    .contacts {
+        &__wrapper {
+            max-width: 700px;
+            padding: 0 0 60px 0;  
+        }
+    }
 }
 
 
@@ -229,5 +235,20 @@
             grid-column: 1 / 2;
             grid-row: 5 / 6;
         }  
+    }
+    .contacts {
+        &__wrapper {
+            margin: 0 10px;
+        }
+        &__form {
+            grid-template: 45px 45px 190px 45px 45px / 100%;
+            gap: 20px;
+        }
+        &__textarea {
+            grid-column: 1 / 2;
+        }
+        &__btn {
+            order: 4;
+        }
     }
 }

@@ -25,6 +25,7 @@
     <meta name="theme-color" content="#ffffff">
 
     <link rel="stylesheet" href="css/style.min.css">
+
     <script src="https://code.jquery.com/jquery-3.6.3.min.js"
   integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU="
   crossorigin="anonymous"></script>
@@ -42,10 +43,10 @@
         <div class="overlay-navigation">
             <nav role="navigation">
               <ul>
-                <li><a href="#" data-content="Well, let's get acquainted then.">About me</a></li>
-                <li><a href="#" data-content="What do I use in my work">Skills</a></li>
-                <li><a href="#" data-content="Only the finest">Works</a></li>
-                <li><a href="#" data-content="Don't hesitate">Contact</a></li>
+                <li><a href="#aboutMe" data-content="Well, let's get acquainted then.">About me</a></li>
+                <li><a href="#skills" data-content="What do I use in my work">Skills</a></li>
+                <li><a href="#works" data-content="Only the finest">Works</a></li>
+                <li><a href="#contacts" data-content="Don't hesitate">Contact</a></li>
               </ul>
             </nav>
           </div>
@@ -75,7 +76,7 @@
 
     
 
-    <section class="aboutMe">
+    <section class="aboutMe" id="aboutMe">
         <div class="container">
             <div class="aboutMe__wrapper">
 
@@ -128,7 +129,7 @@
         </div>
     </section>
 
-    <section class="skills">
+    <section class="skills" id="skills">
         <div class="container">
             <h2 class="title skills__title">Skills</h2>
             <div class="subtitle skills__subtitle">What do I use in my work</div>
@@ -173,27 +174,56 @@
     </section>
 
 
-    <section class="works">
+    <section class="works" id="works">
         <div class="container">
             <h2 class="title works__title">Portfolio</h2>
             <div class="subtitle works__subtitle">My works</div>
             <div class="works__divider"></div>
             <div class="works__wrapper">
-                <a class="works__link works_upper-horizontal" href=""><img class="works__img" src="img/works/globalOpt.jpg" alt="globalOpt"></a>
-                <a class="works__link" href=""><img class="works__img" src="img/works/pulse.jpg" alt="pulse"></a>
-                <a class="works__link works_upper-vertical" href=""><img class="works__img" src="img/works/thrivetalk.jpg" alt="thrivetalk"></a>
-                <a class="works__link" href=""><img class="works__img" src="img/works/uber.jpg" alt="uber"></a>
-                <a class="works__link works_lower-horizontal" href=""><img class="works__img" src="img/works/prengi.jpg" alt="prengi"></a>
+                <a class="works__link works_upper-horizontal" target="_blank" href="works/GlobalOpt/index.html"><img class="works__img" src="img/works/globalOpt.jpg" alt="globalOpt"></a>
+                <a class="works__link" target="_blank" href="works/RunSmart/index.html"><img class="works__img" src="img/works/pulse.jpg" alt="pulse"></a>
+                <a class="works__link works_upper-vertical" target="_blank" href="works/ThriveTalk/index.html"><img class="works__img" src="img/works/thrivetalk.jpg" alt="thrivetalk"></a>
+                <a class="works__link" target="_blank" href="works/Uber/index.html"><img class="works__img" src="img/works/uber.jpg" alt="uber"></a>
+                <a class="works__link works_lower-horizontal" target="_blank" href="works/Prengi/index.html"><img class="works__img" src="img/works/prengi.jpg" alt="prengi"></a>
             </div>
         </div>
     </section>
 
-    <section class="contacts">
+    <section class="contacts" id="contacts">
         <div class="container">
             <div class="contacts__wrapper">
                 <h2 class="title contacts__title">Contacts</h2>
                 <div class="subtitle contacts__subtitle">Get in touch with me</div>
                 <div class="contacts__divider"></div>
+                <div class="contacts__text">Any convenient way:</div>
+
+                <div class="contacts__icons">
+                    <a href="https://github.com/kleinvee" target="_blank" class="contacts__icon"><span class="icon-github"></span></a>
+                    <a href="https://www.instagram.com/something_uninteresting/" target="_blank" class="contacts__icon"><span class="icon-instagram"></span></a>
+                    <a href="https://t.me/something_uninteresting" target="_blank" class="contacts__icon"><span class="icon-telegram"></span></a>
+                </div>
+        
+                <div class="contacts__text">Or leave your information and I’ll write to you:</div>
+                
+                <form action="#" class="contacts__form">
+                    <div class="contacts__input">
+                        <input id="name" name="name" type="text">
+                        <label for="name">Name</label>
+                    </div>
+                    <div class="contacts__input">
+                        <input id="email" name="email" type="email">
+                        <label for="email">Email</label>
+                    </div>
+                    <div class="contacts__textarea">
+                        <textarea id="message" name="message"></textarea>
+                        <label for="message">Message</label>
+                    </div>
+                    <button class="contacts__btn">Send</button>
+                    <div class="contacts__policy">
+                        <input type="checkbox">
+                        <div class="contacts__policy_text">I Agree to <a target="_blank" href="https://www.freeprivacypolicy.com/live/48795143-b999-4a06-a8af-49eb4d6dc713">Privacy Policy</a></div> 
+                    </div>
+                </form>
             </div>
 
         </div>
