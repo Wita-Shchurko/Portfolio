@@ -205,13 +205,13 @@
         
                 <div class="contacts__text">Or leave your information and I’ll write to you:</div>
                 
-                <form action="#" class="contacts__form">
+                <form action="https://formspree.io/f/mbjeklov" method="POST" class="contacts__form">
                     <div class="contacts__input">
-                        <input id="name" name="name" type="text">
+                        <input required id="name" name="name" type="text">
                         <label for="name">Name</label>
                     </div>
                     <div class="contacts__input">
-                        <input id="email" name="email" type="email">
+                        <input required id="email" name="email" type="email">
                         <label for="email">Email</label>
                     </div>
                     <div class="contacts__textarea">
@@ -220,7 +220,7 @@
                     </div>
                     <button class="contacts__btn">Send</button>
                     <div class="contacts__policy">
-                        <input type="checkbox">
+                        <input required type="checkbox">
                         <div class="contacts__policy_text">I Agree to <a target="_blank" href="https://www.freeprivacypolicy.com/live/48795143-b999-4a06-a8af-49eb4d6dc713">Privacy Policy</a></div> 
                     </div>
                 </form>
